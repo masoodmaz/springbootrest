@@ -20,7 +20,6 @@ public class Task {
     private String proposalNumber;
     @JsonAlias("proposal_title")
     private String proposalTitle;
-    private String proposalDocument;
     @JsonAlias("operator_accepts_engineering_reco")
     private String operator_accepts_engineering_reco;
     private String issue_date;
@@ -78,14 +77,6 @@ public class Task {
 
     public void setProposalTitle(String proposalTitle) {
         this.proposalTitle = proposalTitle;
-    }
-
-    public String getProposalDocument() {
-        return proposalDocument;
-    }
-
-    public void setProposalDocument(String proposalDocument) {
-        this.proposalDocument = proposalDocument;
     }
 
     public String getOperator_accepts_engineering_reco() {
